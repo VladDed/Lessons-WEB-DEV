@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta lang=""ru>
-    <meta name="viewport" content= "width=device-width, initial-scale=1.0">
-    <title>test</title>
+    <head>
+        <meta charset="utf-8">
+        <meta lang=""ua>
+        <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+        <title>Site</title>
     <link rel="stylesheet" href="CSS.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
-</head>
+    </head>
+
 <body >
     <header>
-    <div class="contair">
-        <div class="header_logo">
-       
-            <img src="img1.svg" alt="Logo" widht="186" height="58">
-            
-        </div>
-            <nav class="header__nav"></nav>
+        <div class="contair">
+            <div class="header_logo">
+                <img src="logo.svg" alt="Logo" widht="186" height="58">
+            </div>
+            <div class="header__nav">
                 <ul>
                     <li class="li">
                         <a href="#">Home</a>
@@ -33,29 +32,30 @@
                         <a href="#">Help</a>
                     </li>
                 </ul>
-        </div>
-        <div class="header__actions"> 
-            <a href="#">Login</a>
+            </div>
+            <div class="header__actions"> 
+                <a href="#" class="btn btn--secondary">Login</a>
+                <button class="header__burger"><svg width="44" height="27" viewBox="0 0 44 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0.25H44V4.66667H0V0.25ZM11 11.2917H44V15.7083H11V11.2917ZM24.75 22.3333H44V26.75H24.75V22.3333Z" fill="white"/>
+                    </svg>
+                </button>
+            </div>
         </div>
     </header>
     <main>
         <section class="hero">
             <div class="container">
                 <div class="title">
-                    <h1>Test site</h1>
-                    <p>Щось буде цікаве
+                    <h1>Work at the speed of thought</h1>
+                    <p>Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.
                     </p>
                 </div>
                 <div class="action">
-                    <a href="#" class="btn btn--primary">
-                        Try For Free
-                    </a>
-                    <a href="#" class="btn btn--primary">
-                        Learn more
-                    </a>
+                    <a href="#" class="btn btn--primary">Try For Free</a>
+                    <a href="#" class="btn btn--primary">Learn more</a>
                 </div>
                 <div class="hero-image">
-                    <img src="" alt="">
+                    <img src="imgGroup.svg" alt="page">
                 </div>
             </div>
         </section>
@@ -63,13 +63,14 @@
             <div class="container">
                 <div class="title">
                     <h2>FEATURES</h2>
-                    <p>Slate is designed for freelancers who want a simple way to plan their schedule.</p>
+                        <p>Most calendars are designed for teams. Slate is designed for 
+                            freelancers who want a simple way to plan their schedule.</p>
                 </div>
-                <div class="features_image"><img src="img/features_image.png" alt="kartinka"></div>
+                <div class="features_image"><img src="PageBot.png" alt="kartinka"></div>
                     <div class="features_items">
                         <div class="features_item"></div>
                         <div class="features__title">
-                            <div class="fearures__title-icon"><img src="img/fork-icon.svg" alt="fork">
+                            <div class="fearures__title-icon"><img src="eat.png" alt="fork">
                             </div>
                             <div class="fearures__title-text">A single source of truth</div>
                         </div>
@@ -78,7 +79,7 @@
                     <div class="features_items">
                         <div class="features_item">
                             <div class="features__title">
-                                <div class="fearures__title-icon"><img src="img/alient-icon.svg" alt="alient"></div>
+                                <div class="fearures__title-icon"><img src="notpeople.png" alt="alient"></div>
                                 <div class="fearures__title-text">Intuitive interface</div>
                             </div>
                         </div>
@@ -87,7 +88,7 @@
                     <div class="features_items">
                         <div class="features_item">
                             <div class="features__title">
-                                <div class="fearures__title-icon"><img src="img/ifinity-icon.svg" alt="inf">
+                                <div class="fearures__title-icon"><img src="infinity.png" alt="inf">
                                 </div>
                                 <div class="fearures__title-text">Or with rules</div>
                             </div>
@@ -134,11 +135,8 @@
                         <div class="gallary_item"><img src="Rectangle 1.jpg" alt=""></div>
                         <div class="gallary_item"><img src="Rectangle 1.jpg" alt=""></div>
                         <div class="gallary_item"><img src="Rectangle 1.jpg" alt=""></div>
-                        <a href="#" class="btn btn--primary">
-                            See more
-                        </a>
+                        <a href="#" class="btn btn--primary">See more</a>
                 </div>
-                
             </div>  
        </section>
         <sections class="partners">
@@ -169,186 +167,182 @@
                                 </svg>
                         </div>
                         <div class="actions">
-                            <a href="#" class="btn btn--secondary">
-                                All partners
-                            </a>
+                            <a href="#" class="btn btn--secondary">All partners</a>
                         </div>
                     </div>
                 </div>
         </sections>
+        <selection class="testimonials">
+            <div class="testimonials_users">
+                <img src="avatar.png" alt="avatar"  width="50" height="50">
+                <p>Clarie Bell</p>
+                <p>Designer</p>
+            </div>
+            <div class="testmonials_text">
+                <p>Slate helps you see how many more days 
+                    you need to work to reach your financial 
+                    goal for the month and year. Slate helps 
+                    you see how many more days 
+                    you need to work to reach your financial 
+                    goal for the month and year.your financial 
+                    goal for the month and year.
+                </p>
+            </div>
+            <div class="testimonials_users">
+                <img src="avatar.png" alt="avatar"  width="50" height="50">
+                <p>Clarie Bell</p>
+                <p>Designer</p>
+            </div>
+            <div class="testmonials_text">
+                <p>Slate helps you see how many more days 
+                    you need to work to reach your financial 
+                    goal for the month and year. Slate helps 
+                    you see how many more days 
+                    you need to work to reach your financial 
+                    goal for the month and year.your financial 
+                    goal for the month and year.
+                </p>
+            </div>
+            <div class="testimonials_users">
+                <img src="avatar.png" alt="avatar"  width="50" height="50">
+                <p>Clarie Bell</p>
+                <p>Designer</p>
+            </div>
+            <div class="testmonials_text">
+                <p>Slate helps you see how many more days 
+                    you need to work to reach your financial 
+                    goal for the month and year. Slate helps 
+                    you see how many more days 
+                    you need to work to reach your financial 
+                    goal for the month and year.your financial 
+                    goal for the month and year.
+                </p>
+            </div>
+            <div class="testimonials_users">
+                <img src="avatar.png" alt="avatar"  width="50" height="50">
+                <p>Clarie Bell</p>
+                <p>Designer</p>
+            </div>
+            <div class="testmonials_text">
+                <p>Slate helps you see how many more days 
+                    you need to work to reach your financial 
+                    goal for the month and year. Slate helps 
+                    you see how many more days 
+                    you need to work to reach your financial 
+                    goal for the month and year.your financial 
+                    goal for the month and year.
+                </p>
+            </div>
+            <div class="testimonials_users">
+                <img src="avatar.png" alt="avatar"  width="50" height="50">
+                <p>Clarie Bell</p>
+                <p>Designer</p>
+            </div>
+            <div class="testmonials_text">
+                <p>Slate helps you see how many more days 
+                    you need to work to reach your financial 
+                    goal for the month and year. Slate helps 
+                    you see how many more days 
+                    you need to work to reach your financial 
+                    goal for the month and year.your financial 
+                    goal for the month and year.
+                </p>
+            </div>
+            <div class="testimonials_users">
+                <img src="avatar.png" alt="avatar"  width="50" height="50">
+                <p>Clarie Bell</p>
+                <p>Designer</p>
+            </div>
+            <div class="testmonials_text">
+                <p>Slate helps you see how many more days 
+                    you need to work to reach your financial 
+                    goal for the month and year. Slate helps 
+                    you see how many more days 
+                    you need to work to reach your financial 
+                    goal for the month and year.your financial 
+                    goal for the month and year.
+                </p>
+            </div>
+            <div class="testimonials_users">
+                <img src="avatar.png" alt="avatar"  width="50" height="50">
+                <p>Clarie Bell</p>
+                <p>Designer</p>
+            </div>
+            <div class="testmonials_text">
+                <p>Slate helps you see how many more days 
+                    you need to work to reach your financial 
+                    goal for the month and year. Slate helps 
+                    you see how many more days 
+                    you need to work to reach your financial 
+                    goal for the month and year.your financial 
+                    goal for the month and year.
+                </p>
+            </div>
+        </selection>
+        <section class="title">
+            <div class="title_item">
+                <div class="title_title">
+                    <h2>
+                        OpenType features 
+                        and Variable fonts
+                    </h2>
+                    <a href="#" class=""></a>
+                    <div class="div_title_image">
+                        <img src="Line Chart 1.jpg" alt="Line Chart 1" width="580" height="375">
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <selection class="testimonials">
-        <div class="testimonials_users">
-            <img src="avatar.png" alt="avatar"  width="50" height="50">
-            <p>Clarie Bell</p>
-            <p>Designer</p>
-        </div>
-        <div class="testmonials_text">
-            <p>Slate helps you see how many more days 
-                you need to work to reach your financial 
-                goal for the month and year. Slate helps 
-                you see how many more days 
-                you need to work to reach your financial 
-                goal for the month and year.your financial 
-                goal for the month and year.
-            </p>
-        </div>
-        <div class="testimonials_users">
-            <img src="avatar.png" alt="avatar"  width="50" height="50">
-            <p>Clarie Bell</p>
-            <p>Designer</p>
-        </div>
-        <div class="testmonials_text">
-            <p>Slate helps you see how many more days 
-                you need to work to reach your financial 
-                goal for the month and year. Slate helps 
-                you see how many more days 
-                you need to work to reach your financial 
-                goal for the month and year.your financial 
-                goal for the month and year.
-            </p>
-        </div>
-        <div class="testimonials_users">
-            <img src="avatar.png" alt="avatar"  width="50" height="50">
-            <p>Clarie Bell</p>
-            <p>Designer</p>
-        </div>
-        <div class="testmonials_text">
-            <p>Slate helps you see how many more days 
-                you need to work to reach your financial 
-                goal for the month and year. Slate helps 
-                you see how many more days 
-                you need to work to reach your financial 
-                goal for the month and year.your financial 
-                goal for the month and year.
-            </p>
-        </div>
-        <div class="testimonials_users">
-            <img src="avatar.png" alt="avatar"  width="50" height="50">
-            <p>Clarie Bell</p>
-            <p>Designer</p>
-        </div>
-        <div class="testmonials_text">
-            <p>Slate helps you see how many more days 
-                you need to work to reach your financial 
-                goal for the month and year. Slate helps 
-                you see how many more days 
-                you need to work to reach your financial 
-                goal for the month and year.your financial 
-                goal for the month and year.
-            </p>
-        </div>
-        <div class="testimonials_users">
-            <img src="avatar.png" alt="avatar"  width="50" height="50">
-            <p>Clarie Bell</p>
-            <p>Designer</p>
-        </div>
-        <div class="testmonials_text">
-            <p>Slate helps you see how many more days 
-                you need to work to reach your financial 
-                goal for the month and year. Slate helps 
-                you see how many more days 
-                you need to work to reach your financial 
-                goal for the month and year.your financial 
-                goal for the month and year.
-            </p>
-        </div>
-        <div class="testimonials_users">
-            <img src="avatar.png" alt="avatar"  width="50" height="50">
-            <p>Clarie Bell</p>
-            <p>Designer</p>
-        </div>
-        <div class="testmonials_text">
-            <p>Slate helps you see how many more days 
-                you need to work to reach your financial 
-                goal for the month and year. Slate helps 
-                you see how many more days 
-                you need to work to reach your financial 
-                goal for the month and year.your financial 
-                goal for the month and year.
-            </p>
-        </div>
-        <div class="testimonials_users">
-            <img src="avatar.png" alt="avatar"  width="50" height="50">
-            <p>Clarie Bell</p>
-            <p>Designer</p>
-        </div>
-        <div class="testmonials_text">
-            <p>Slate helps you see how many more days 
-                you need to work to reach your financial 
-                goal for the month and year. Slate helps 
-                you see how many more days 
-                you need to work to reach your financial 
-                goal for the month and year.your financial 
-                goal for the month and year.
-            </p>
-        </div>
-    </selection>
-    <section class="title">
-        <div class="title_item">
-            <div class="title_title">
-                <h2>
-                    OpenType features 
-                    and Variable fonts
-                </h2>
-                <a href="#" class=""></a>
-                <div class="div_title_image">
-                    <img src="Line Chart 1.jpg" alt="Line Chart 1" width="580" height="375">
+    
+        <footer>
+            <div class="content">
+                <div class="column">
+                    <div class="row">
+                        <ul>
+                            <li>
+                                <p class="title_about">Fingertipe</p>
+                                <li><a href="Home">Home </a></li>
+                                <li><a href="Examples">Examples </a></li>
+                                <li><a href="Pricing">Pricing </a></li>
+                                <li><a href="Updates">Updates </a></li>
+                            </li> 
+                            <li>
+                                <p class="title_about">Resources</p>
+                                <li><a href="Home">Home </a></li>
+                                <li><a href="Examples">Examples</a></li>
+                                <li><a href="Pricing">Pricing </a></li>
+                                <li><a href="Updates"> Updates</a></li>
+                            </li>
+                            <li>
+                                <p class="title_about"> About</p>
+                                <li><a href="Home">Home </a></li>
+                                <li><a href="Examples">Examples</a></li>
+                                <li><a href="Pricing">Pricing </a></li>
+                                <li><a href="Updates"> Updates</a></li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <div class="row">
+                    <div class="block">
+                            <img src="Geo.png" alt="7480 Mockingbird Hill undefined ">
+                            <p class="geoinfo">7480 Mockingbird Hill undefined </p>
+                    </div>
+                    
+                    <div class="block">
+                        <img src="Phone.png" alt="Phone">
+                        <a href="tel: 2395550108">(239) 555-0108</a>
+                    </div>
+                
+                    <div class="social__madia">
+                        <img src="Twiter.png" alt="Twiter">
+                        <img src="Facebook.png" alt="Facebook">
+                        <img src="in.png" alt="in">
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <footer>
-        <div class="content_about">
-            <div class="about">
-                <ul>
-                    <li>
-                        <p class="title_about">
-                            Fingertipe
-                        </p>
-                        <li><a href="Home"></a></li>
-                        <li><a href="Examples"></a></li>
-                        <li><a href="Pricing"></a></li>
-                        <li><a href="Updates"></a></li>
-                    </li> 
-                    <li>
-                        <p class="title_about">
-                            Resources
-                        </p>
-                        <li><a href="Home"></a></li>
-                        <li><a href="Examples"></a></li>
-                        <li><a href="Pricing"></a></li>
-                        <li><a href="Updates"></a></li>
-                    </li>
-                    <li>
-                        <p class="title_about">
-                            About
-                        </p>
-                        <li><a href="Home"></a></li>
-                        <li><a href="Examples"></a></li>
-                        <li><a href="Pricing"></a></li>
-                        <li><a href="Updates"></a></li>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="we">
-                <div class="geoinfo">
-                    <img src="" alt="">
-                    <p class="geoinfo"></p>
-                </div>
-                <div class="phone">
-                    <img src="" alt="">
-                    <a href="tel: 2395550108">(239) 555-0108</a>
-                </div>
-            
-                <div class="We in soicial media">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </div>
-            </div>
-    </footer>
-
-</body>
+        </footer>
+    </body>
 </html>
