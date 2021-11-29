@@ -379,10 +379,10 @@ button{
   --blue-800: #1823AC;
   --cian:#02E4C0;
   --dark-blue: #112D57;
-  --black: #000;
+  --black: rgb(0, 0, 0);
   --white: #FFF;
   --gray:#5c5c5c;
-  --black-800: #181818;
+  --black-800: #000000;
 
   --primary-color: var(--blue);
   --secondary-color: var(--cian);
@@ -448,6 +448,7 @@ a {
 
 .btn--primary {
   background-color: var(--primary-color);
+  margin-top: 1.5%;
 }
 
 .btn--primary:hover {
@@ -492,7 +493,7 @@ a .header{
   }
 }
 
-
+/* Меню*/
 .header_nav ul{
   padding: 0;
   display: flex;
@@ -515,4 +516,80 @@ a .header{
 .header_action btn {
   display: flex;
   align-items: center;
+}
+.header_nav ul
+{
+padding: 0%;
+display: flex;
+margin: 0;
+align-items: center;
+justify-content: space-between;
+}
+
+.header__wrapper {
+  display: flex;
+}
+
+.header_nav li:not(:last-child)
+{
+  margin-right: 4rem;
+}
+/**/
+
+/*Work at the speed of thought
+2  Кнопки*/
+.title
+{
+  color: #FFF;
+  text-align: center;
+}
+.hero .container .action
+{
+  text-align: center;
+  line-height: 40px;
+  margin: 5%;
+}
+.hero .container .action .btn
+{
+  margin: 2%;
+}
+
+.hero_image
+{
+  display: flex;
+}
+
+
+
+
+/*Content*/
+.gallary_items
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.gallary_item:not(:last-child) {
+  margin-right: 40px;
+}
+.partner_icons
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.partner_icons:not(:last-child) {
+  margin-right: 40px;
+}
+h2
+{
+  text-align: center;
+  color: #FFF;
+}
+p
+{
+  text-align: center;
+  color: #FFF; 
 }

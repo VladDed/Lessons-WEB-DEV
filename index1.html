@@ -13,11 +13,11 @@
 
 <body >
     <header>
-        <div class="contair">
+        <div class="container header__wrapper">
             <div class="header_logo">
                 <img src="logo.svg" alt="Logo" widht="186" height="58">
             </div>
-            <div class="header__nav">
+            <div class="header_nav">
                 <ul>
                     <li class="li">
                         <a href="#">Home</a>
@@ -54,7 +54,7 @@
                     <a href="#" class="btn btn--primary">Try For Free</a>
                     <a href="#" class="btn btn--primary">Learn more</a>
                 </div>
-                <div class="hero-image">
+                <div class="hero_image">
                     <img src="imgGroup.svg" alt="page">
                 </div>
             </div>
@@ -115,42 +115,51 @@
                             <h3>Design with real data</h3>
                             <div class="contents_text">Ever wondered if you're too reliant on a client for work? Slate helps you identify .</div>
                             <a href="" class="btn">Try For Free</a>
-                            <div class=content__images><img src="BoardsNotifications.svg" alt="board"></div>
+                            <div class=content__images><img src="Boards Notifications.png" alt="board"></div>
                         </div>
                     </div>
             </div>
         </setion>
        <section class="gallary">
-           <div class="gallary">
+           <div class="container">
                 <div class="title">
                         <h2>Gallery</h2>
                     <p>
                          We focus on ergonomics and meeting you where you work. 
                         It's only a keystroke away.
                     </p>
-                        <div class="gallary_item"><img src="Rectangle 1.jpg" alt="Rectangle 1"></div>
-                        <div class="gallary_item"><img src="Rectangle 1.jpg" alt=""></div>
-                        <div class="gallary_item"><img src="Rectangle 1.jpg" alt=""></div>
-                        <div class="gallary_item"><img src="Rectangle 1.jpg" alt=""></div>
-                        <div class="gallary_item"><img src="Rectangle 1.jpg" alt=""></div>
-                        <div class="gallary_item"><img src="Rectangle 1.jpg" alt=""></div>
-                        <div class="gallary_item"><img src="Rectangle 1.jpg" alt=""></div>
-                        <a href="#" class="btn btn--primary">See more</a>
                 </div>
+                <div class="gallary_items">
+                    <div class="gallary_item"><img src="Rectangle 1.jpg" alt="Rectangle 1"  width="255" height="285"></div>
+                    <div class="gallary_item"><img src="Rectangle 1.jpg" alt="Rectangle 1"  width="255" height="285"></div>
+                    <div class="gallary_item"><img src="Rectangle 1.jpg" alt="Rectangle 1"  width="255" height="285"></div>
+                    <div class="gallary_item"><img src="Rectangle 1.jpg" alt="Rectangle 1"  width="255" height="285"></div>
+                    <div class="gallary_item"><img src="Rectangle 1.jpg" alt="Rectangle 1"  width="255" height="285"></div>
+                    <div class="gallary_item"><img src="Rectangle 1.jpg" alt="Rectangle 1"  width="255" height="285"></div>
+                    <div class="gallary_item"><img src="Rectangle 1.jpg" alt="Rectangle 1"  width="255" height="285"></div>
+                </div>
+
+                  <a href="#" class="btn btn--primary">See more</a>
+                
             </div>  
        </section>
+
         <sections class="partners">
                 <div class="container">
-                    <div class="title">
-                        <h2>
-                        Partners
-                        </h2>
+                    <div class="title.partners">
+                        <h2> Partners</h2>
                         <p>
                             We focus on ergonomics and meeting you where you work. 
                             It's only a keystroke away.
                         </p>
-                        <div class="partner_icons">
-                            <img src="logos_ibm.svg" alt="">
+                    </div>
+                    <div class="partner_icons">
+                            <img src="logos_ibm.svg" alt="" width="60" height="60">
+                            <img src="logos_basecamp.svg" alt="" width="60" height="60.7">
+                            <img src="logos_airbnb.svg" alt="" width="60" height="75.55">
+                            <img src="logos_apiary.svg" alt="" width="72.11" height="60">
+                            <img src="logos_apple-app-store.svg" alt="" width="60" height="64.69">
+                            
                             <svg width="61" height="72" viewBox="0 0 61 72" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_62:2739)">
                                 <path d="M18.8893 0.724704C18.5458 0.726916 18.2083 0.814634 17.9072 0.979939C16.9186 1.52791 16.5561 2.79799 17.1038 3.78588L19.3358 7.81619C13.9583 11.1431 10.395 16.8263 10.395 23.3126V24.5178C9.36216 23.3295 7.84411 22.5792 6.14794 22.5792C3.04013 22.5792 0.516846 25.1025 0.516846 28.2101V45.556C0.516846 48.6633 3.04036 51.1868 6.14794 51.1868C7.84411 51.1868 9.36216 50.4364 10.3948 49.2481V51.6778C10.3948 54.9537 13.0754 57.634 16.3512 57.634H17.8625V65.3503C17.8625 68.4581 20.386 70.9814 23.4936 70.9814C26.6011 70.9814 29.1244 68.4579 29.1244 65.3503V57.634H31.7391V65.3503C31.7391 68.4581 34.2626 70.9814 37.3702 70.9814C40.4778 70.9814 43.0011 68.4579 43.0011 65.3503V57.634H44.5125C47.7882 57.634 50.4687 54.9537 50.4687 51.6778V49.2481C51.5014 50.4364 53.0197 51.1868 54.7158 51.1868C57.8234 51.1868 60.3467 48.6633 60.3467 45.556V28.2101C60.3467 25.1025 57.8234 22.5792 54.7158 22.5792C53.0197 22.5792 51.5014 23.3295 50.4687 24.5178V23.5165V23.4591C50.4692 23.3981 50.4687 23.3494 50.4687 23.3126C50.4687 16.8274 46.8973 11.1499 41.5217 7.82275L43.76 3.78588C44.3075 2.79799 43.9451 1.52791 42.9565 0.979939C42.6555 0.814634 42.318 0.726916 41.9745 0.724704C41.2444 0.717673 40.5279 1.10252 40.1506 1.78338L37.8101 6.0115C35.5217 5.16705 33.0317 4.70416 30.432 4.70416C27.8347 4.70416 25.34 5.16213 23.0534 6.00494L20.7132 1.78338C20.3356 1.10252 19.6193 0.718142 18.8893 0.724704Z" fill="white"/>
@@ -164,13 +173,10 @@
                                 <rect width="60" height="70.5469" fill="white" transform="translate(0.516846 0.523438)"/>
                                 </clipPath>
                                 </defs>
-                                </svg>
-                        </div>
-                        <div class="actions">
-                            <a href="#" class="btn btn--secondary">All partners</a>
-                        </div>
+                            </svg>
                     </div>
-                </div>
+                            <a href="#" class="btn btn--secondary">All partners</a>
+            </div>
         </sections>
         <selection class="testimonials">
             <div class="testimonials_users">
@@ -332,7 +338,7 @@
                     </div>
                     
                     <div class="block">
-                        <img src="Phone.png" alt="Phone">
+                        <img src="Vector-min.png" alt="Phone">
                         <a href="tel: 2395550108">(239) 555-0108</a>
                     </div>
                 
