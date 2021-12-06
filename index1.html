@@ -136,6 +136,7 @@
                         It's only a keystroke away.
                     </p>
                 </div>
+                <div class="galleryset">
                 <div class="gallery__items">
                     <div class="gallery__item"><img src="Rectangle 1.jpg" alt=""></div>
                     <div class="gallery__item"><img src="Rectangle 2.jpg" alt=""></div>
@@ -147,6 +148,7 @@
                     <div class="gallery__item"><img src="Card (2).jpg" alt=""></div>
                     <div class="gallery__item"><img src="Card (3).jpg" alt=""></div>
                     <div class="gallery__item"><img src="Card (4).jpg" alt=""></div>
+                </div>
                 </div>
                 <div class="action">
                   <a href="#" class="btn btn--primary">See more</a>
@@ -311,5 +313,20 @@
                 </div>
             </div>
         </footer>
+        <script>
+            let headerBtn = document.querySelector('.header__bueger');
+            let headerClose = document.querySelector('.header__close');
+            let headerNav = document.querySelector('.header__nav');
+
+headerOpen.addEventListener('click',function(e)
+{
+    headerNav.classList.add('active');
+});
+headerClase.addEventListener('click',function(e)
+{
+    headerNav.classList.remove('active');
+});
+
+        </script>
     </body>
 </html>
