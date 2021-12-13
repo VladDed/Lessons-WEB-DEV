@@ -1,4 +1,4 @@
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/*! normalize.cs v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
    ========================================================================== */
@@ -487,6 +487,21 @@ li{
   flex-direction: row;/*розташування у контейнері*/
 }
 
+@media screen and (max-width: 768px) {
+  .header__nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 1);
+    transform: translate(-100%, 0);
+    transition: all .3s ease-in;
+  }
+  
 header{
   list-style: none;
   padding: 0 4rem;
@@ -696,10 +711,13 @@ a .header{
   align-items: center;
   margin-top: 20px;
 }
-
-.gallery .action{
-  margin-top: 5%;
+.galleryset{
+  margin-bottom: 2rem;
 }
+/* .action{
+  margin-top: 20px;
+
+} */
 
 .partners__icons{
   display: flex;
