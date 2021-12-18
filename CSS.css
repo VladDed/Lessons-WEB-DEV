@@ -487,20 +487,6 @@ li{
   flex-direction: row;/*розташування у контейнері*/
 }
 
-@media screen and (max-width: 768px) {
-  .header__nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    background: rgba(0, 0, 0, 1);
-    transform: translate(-100%, 0);
-    transition: all .3s ease-in;
-  }
   
 header{
   list-style: none;
@@ -879,15 +865,69 @@ footer{
   margin-left:10%;
   width:200px;
 }
-@media screen and (max-width:768px)
+/*Тут кнопка закриття*/
+@media screen and (min-width:700px){
+  .header__close{
+    display: none;
+    position: absolute;
+    top: 300rem;
+    right: 10rem;
+}
+.header__burger
+{
+  display: none;
+}
+}
+
+@media screen and (max-width:900px)
 {
   .header_nav
   {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0,0,0,1);
+    transform: translate(-100%,0);
+    transition: all .3s ease-in;
+    z-index: 9999999;
 
+  }
+}
+.features_image
+{
+width: 100%;
+}
+
+@media screen and (min-width: 900px){
+
+  .headerButtom li:not(:last-child){
+    margin-right: 4rem;
   }
 
 }
+.headerButtomClose{
+  position: absolute;
+  top:32rem;
+  left:32rem;
+}
+
+.header__actions
+{
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+}
+/*.header_action .btn
+{
+display: flex;
+align-items: center;
+
+}*/
+
+

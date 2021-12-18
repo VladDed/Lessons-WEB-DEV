@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta lang=""ua>
+        <meta lang="ua">
         <meta name="viewport" content= "width=device-width, initial-scale=1.0">
         <title>Site</title>
         <link rel="stylesheet" href="CSS.css">
@@ -11,19 +11,22 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
     </head>
 
-<body >
+<body>
     <header>
         <div class="container header__wrapper">
             <div class="header_logo">
                 <img src="logo.svg" alt="Logo" widht="186" height="58">
             </div>
-            <button class="header__close">
-                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <line x1="1.15231" y1="14.6406" x2="15.436" y2="0.356957" stroke="black"/>
-                    <line x1="1.56486" y1="0.35775" x2="16.1422" y2="14.9351" stroke="black"/>
+           <div class="headerButtom">
+               <div class="headerButtomClose">
+                <button class="header__close">
+                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="1.15231" y1="14.6406" x2="15.436" y2="0.356957" stroke="black"/>
+                        <line x1="1.56486" y1="0.35775" x2="16.1422" y2="14.9351" stroke="black"/>
                     </svg>
-                    
-            </button>
+                </button>
+               </div>
+            </div>
             <div class="header_nav">
                 <ul>
                     <li class="li">
@@ -39,11 +42,13 @@
                         <a href="#">Help</a>
                     </li>
                 </ul>
-                <button class="header__burger">
-                    <svg width="44" height="27" viewBox="0 0 44 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0.25H44V4.66667H0V0.25ZM11 11.2917H44V15.7083H11V11.2917ZM24.75 22.3333H44V26.75H24.75V22.3333Z" fill="white"/>
-                    </svg>                       
-                </button>
+                
+                    <button class="header__burger">
+                        <svg width="44" height="27" viewBox="0 0 44 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0.25H44V4.66667H0V0.25ZM11 11.2917H44V15.7083H11V11.2917ZM24.75 22.3333H44V26.75H24.75V22.3333Z" fill="white"/>
+                        </svg>                       
+                    </button>
+               
             </div>
             <div class="header__actions"> 
                 <a href="#" class="btn btn--secondary">Login</a>
@@ -324,19 +329,16 @@
             </div>
         </footer>
         <script>
-            let headerBtn = document.querySelector('.header__bueger');
+            let headerOpen = document.querySelector('.header__burger');
             let headerClose = document.querySelector('.header__close');
-            let headerNav = document.querySelector('.header__nav');
+            let headerNav = document.querySelector('.header_nav');
 
-headerOpen.addEventListener('click',function(e)
-{
-    headerNav.classList.add('active');
-});
-headerClase.addEventListener('click',function(e)
-{
-    headerNav.classList.remove('active');
-});
+            headerOpen.addEventListener('click', function(e){
+                headerNav.classList.add('active');
+            });
 
+            headerClose.addEventListener('click', function(e){
+                headerNav.classList.remove('active');
+            });
         </script>
-    </body>
 </html>
