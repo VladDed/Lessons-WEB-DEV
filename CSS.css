@@ -866,68 +866,92 @@ footer{
   width:200px;
 }
 /*Тут кнопка закриття*/
-@media screen and (min-width:700px){
-  .header__close{
-    display: none;
+.header__close {
+display: none;
     position: absolute;
-    top: 300rem;
+    top: 0rem;
     right: 10rem;
 }
-.header__burger
-{
-  display: none;
-}
-}
-
-@media screen and (max-width:900px)
-{
-  .header_nav
-  {
-    position: fixed;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: rgba(0,0,0,1);
-    transform: translate(-100%,0);
-    transition: all .3s ease-in;
-    z-index: 9999999;
-
-  }
-}
-.features_image
-{
-width: 100%;
-}
-
-@media screen and (min-width: 900px){
-
-  .headerButtom li:not(:last-child){
-    margin-right: 4rem;
-  }
-
-}
-.headerButtomClose{
-  position: absolute;
-  top:32rem;
-  left:32rem;
-}
-
 .header__actions
 {
   display: flex;
-  align-items: center;
-  margin-left: 5%;
+  flex-direction: row;
+  align-items: center;/*По вертикали*/
+  justify-content: center;
 }
-/*.header_action .btn
-{
-display: flex;
-align-items: center;
 
-}*/
+@media screen and (min-width: 769px) {
+  .header__burger {
+    display: none;
+  }
 
+  .header__nav li:not(:last-child) {
+    margin-right: 4rem;
+  }
 
+  .header__close {
+    display: none;
+    position: absolute;
+    top: 20rem;
+    right: 10rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header_nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 1);
+    transform: translate(-100%, 0);
+    transition: all .3s ease-in;
+  }
+
+  .buttonHeaderNav{
+    position: absolute;
+    top:16rem;
+    left:28rem;
+  }
+
+  .header_nav.active{
+    transform: translate(0,0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .header_nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header_nav a {
+    font-size: var(--font-size-menu);
+  }
+
+  .header_nav li:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 577px) {
+  .header__close {
+    position: absolute;
+    top: 20rem;
+    right: 10rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header__logo img {
+    max-width: 160px;
+  }
+}
